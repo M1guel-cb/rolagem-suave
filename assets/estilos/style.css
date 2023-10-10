@@ -96,6 +96,10 @@ main h1 {
     margin: 10px 0;
 }
 
+h2 {
+    padding: 10px 0;
+}
+
 main p {
     text-indent: 3em;
 }
