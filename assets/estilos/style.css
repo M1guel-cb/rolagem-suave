@@ -92,7 +92,7 @@ main p {
 }
 
 main h1 {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
 main p {
@@ -136,15 +136,18 @@ div.imagem {
     margin-bottom: 10px;
 }
 
-aside ul {
+main ul {
     columns: 2;
     margin-left: 20px;
-    color: #000;
+}
+
+main li {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
 }
 
 aside li {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 30px;
+    color: #000;
 }
 
 table {
