@@ -15,7 +15,7 @@ Device Breakpoints
         flex-direction: column;
         margin: 0;
         padding: 15px;
-        height: 150px;
+        height: 130px;
     }
 
     header > div {
@@ -23,8 +23,12 @@ Device Breakpoints
     }
 
     header h1 {
-        margin-left: 15px;
+        margin-left: 20px;
         font-size: 2em;
+    }
+
+    header img {
+        height: 50px;
     }
 
     header > nav > ul {
@@ -34,6 +38,40 @@ Device Breakpoints
     nav {
         font-size: .75em;
         margin-top: 10px;
+    }
+
+    table {
+        width: 400px;
+    }
+
+    #titulo {
+        width: 100px;
+    }
+
+    td > img {
+        height: 50px;
+    }
+
+    tr td:nth-child(3) {
+        font-size: .8em;
+    }
+
+    div.imagem img, div.video iframe {
+        width: 100%;
+    }
+
+    small {
+        visibility: visible;
+    }
+
+    #aviso {
+        padding: 10px;
+    }
+
+    #butoes, .me-ajuda-Deus {
+        visibility: hidden;
+        position: fixed;
+        bottom: 0;
     }
 }
 

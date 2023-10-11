@@ -17,7 +17,7 @@ function scrollTo(event) {
     //pega o topo dele
     const section = document.querySelector(id).offsetTop;
     //vai até ele
-    window.scroll(0, section - 110);
+    window.scroll(0, section - 130);
 }
 
 function aORv(opr) {

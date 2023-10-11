@@ -174,7 +174,7 @@ td {
     padding: 10px;
 }
 
-table > tbody > tr > td > img {
+table tbody tr td img {
     margin: auto;
     display: block;
     filter: drop-shadow(2px 2px 3px black);
@@ -232,7 +232,6 @@ table > tbody > tr > td > img {
 #botoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
     width: 600px;
 }
 
@@ -254,6 +253,14 @@ table > tbody > tr > td > img {
     transform: translatey(-7px);
     background-color: transparent;
     border: 5px solid #db0000;
+}
+
+#aviso p {
+    text-align: center;
+}
+
+small {
+    visibility: hidden;
 }
 
 footer {
