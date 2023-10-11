@@ -8,27 +8,35 @@ menuItems.forEach((item) => {
 });
 
 function scrollTo(event) {
+    //previnir do padrão
     event.preventDefault();
+    //pega o elemento clicado
     const element = event.target;
+    //pega o link desse elemnto
     const id = element.getAttribute('href');
+    //pega o topo dele
     const section = document.querySelector(id).offsetTop;
+    //vai até ele
     window.scroll(0, section - 110);
 }
 
-function carrossel(opr) {
+function aORv(opr) {
     if (opr == "+") {
-        idx++;
+        return idx++;
     } else if (opr == "-") {
-        idx--;
+        return idx--;
     }
-
-    if (idx > img.length - 1) {
-        idx = 0;
-    } else if (idx < (img.length - 1) * (-1)) {
-        idx = 0;
-    }
-
-    imgs.style.transform = `translateX(${-idx * 600}px)`;
 }
 
-console.log(img.length - 1);
+function carrossel(opr) {
+    //avançar ou voltar
+    aORv(opr);
+    //ver se chegou no final
+    if (idx > img.length - 1) {
+        idx = 0;
+    } else if (idx < 0) {
+        idx = img.length - 1;
+    }
+    //ir
+    imgs.style.transform = `translateX(${-idx * 600}px)`;
+}

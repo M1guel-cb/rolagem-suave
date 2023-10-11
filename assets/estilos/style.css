@@ -203,6 +203,34 @@ table > tbody > tr > td > img {
     border: 1px solid #000;
 }
 
+#me-ajuda-Deus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrossel {
+    overflow: hidden;
+    height: 300px;
+    width: 600px;
+}
+
+.container {
+    display: flex;
+    transition: transform .5s;
+    transform: translateX(0);
+}
+
+div#img {
+    background-color: #db0000;
+}
+
+#img img {
+    object-fit: cover;
+    height: 300px;
+    width: 600px;
+}
+
 footer {
     width: 100%;
     height: 40px;
