@@ -1,3 +1,63 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/*
+Device Breakpoints 
+- Pequenas telas: até 600px 
+- Celular: 600px até 768px 
+- Tablet: 769px até 992px 
+- Desktop: 992px até 1200px 
+- Grandes telas: acima de 1200px
+*/
+
+@media screen and (max-width: 768px) and (min-width: 600px) {
+    header {
+        flex-direction: column;
+        margin: 0;
+        padding: 15px;
+        height: 150px;
+    }
+
+    header > div {
+        margin: 0px;
+    }
+
+    header h1 {
+        margin-left: 15px;
+        font-size: 2em;
+    }
+
+    header > nav > ul {
+        margin-right: 0;
+    }
+
+    nav {
+        font-size: .75em;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+        margin-left: 15px;
+    }
+
+    header div {
+        margin-left: 15px;
+    }
+
+    nav {
+        font-size: .75em;
+    }
+
+    ul {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    header h1 {
+        font-size: 2em;
+    }
+}
