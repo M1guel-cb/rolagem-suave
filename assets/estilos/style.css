@@ -213,6 +213,7 @@ table > tbody > tr > td > img {
     overflow: hidden;
     height: 300px;
     width: 600px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -229,6 +230,33 @@ div#img {
     object-fit: cover;
     height: 300px;
     width: 600px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 600px;
+}
+
+#botoes button {
+    width: 47.5%;
+    height: 40px;
+    font-size: large;
+    border: none;
+    background-color: #db0000;
+    font-weight: 700;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: .25s;
+}
+
+#botoes button:hover {
+    transform: translatey(-7px);
+    background-color: transparent;
+    border: 5px solid #db0000;
 }
 
 footer {
