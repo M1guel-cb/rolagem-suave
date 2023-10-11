@@ -257,6 +257,9 @@ table tbody tr td img {
 
 #aviso p {
     text-align: center;
+    text-indent: 0;
+    font-size: .75em;
+    line-height: 15px;
 }
 
 small {
